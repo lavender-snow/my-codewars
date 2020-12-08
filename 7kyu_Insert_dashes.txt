@@ -1,0 +1,8 @@
+def insert_dash(num):
+    s = str(num)
+    res = s[0]
+    for c in str(num)[1:]:
+        if c in "13579" and res[-1] in "13579":
+            res += "-"
+        res += c
+    return res
